@@ -19,16 +19,22 @@ def loginGET(environ, start_response):
     passw = cookies['passw']
     uname = cookies['uname']
     passw = decript(passw)
-    if login(uname, passw):
+    login_status = login(uname, passw)
+    if login_status == 1:
         start_response('200 OK', [('Content-text', 'text/plain')])
         iat = datetime.now(timezone.utc).timestamp()
         encoded_jwt = jwt.encode({'uname': uname, 'iat': iat}, 'secret', algorithm='HS256')
-        print(encoded_jwt)
-        return encoded_jwt
+        message = {"jwt": encoded_jwt.decode('utf-8')}
+        yield encoded_jwt
 
-    else:
+    elif login_status == 2:
         start_response('403 Forbidden', [('Content-text', 'text/plain')])
-        message = {"message": "Nu stiu inca"}
+        message = {"message": "Bad username or password"}
+        yield json.dumps(message).encode('utf-8')
+    elif login_status == 3:
+        start_response("500 Internal Server Error", [('Content-text', 'text/plain')])
+        message = {"message": "Databease problem"}
+        yield json.dumps(message).encode('utf-8')
 
-    yield json.dumps(message).encode('utf-8')
+
     

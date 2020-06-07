@@ -70,7 +70,7 @@ if __name__ == '__main__':
     from wsgiref.simple_server import make_server
 
     dispatcher = PathDispatcher()
-    dispatcher.register('GET', '/', index)
+    dispatcher.register('GET', '/', index) #
     dispatcher.register('POST', '/signup', controllerSignUpPOST)
     dispatcher.register('GET', '/signup', controllerSignUpGET)
     dispatcher.register('GET', '/login', loginGET)

@@ -1,7 +1,7 @@
 import mysql.connector
 
 def sing_up(username, password, f_name, l_name):
-    if username and f_name and l_name and len(password) > 6:
+    if username and f_name and l_name and len(password) > 6: # sparta in mai multe si le trimiti 409 cu motivul
         try:
             db = mysql.connector.connect(
                 host="localhost",
@@ -18,4 +18,4 @@ def sing_up(username, password, f_name, l_name):
             return "400 Bad Request"
 
     else:
-        return "400 Bad Request"
+        return "409 Conflict"

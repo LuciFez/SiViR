@@ -26,7 +26,20 @@ myForum.addEventListener('submit', function(e) {
         fetch('login', {
             method: 'GET', // aci trebuie post cu body username si pass, fara cookie
             credentials: "include"
-        }).then ( response => {console.log(response.text());})
+        }).then ( response => {
+            if( response.status === 200) {
+                response.text().then(function (response) {
+                    console.log(response);
+                    document.cookie = "jwt =" + response;
+                });
+
+            }
+            else {
+                response.json().then( function (response) {
+                    alert(response.message);
+                });
+            }
+        })
         .catch(function (error) {
         console.error(error);
     })

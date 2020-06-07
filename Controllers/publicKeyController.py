@@ -1,5 +1,4 @@
 import sys
-import json
 sys.path.append('../')
 from Models.pubicKey import *
 

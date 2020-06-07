@@ -11,10 +11,12 @@ def login(username, password):
         mycursor = db.cursor()
         sql = "SELECT * FROM users  WHERE username = \'" + username + "\';"
         mycursor.execute(sql)
-        myresult = mycursor.fetchall()[0]
-        if myresult[2] == password:
-            return True
-        return False
+        myresult = mycursor.fetchall()
+        if len(myresult) > 0:
+            myresult = myresult[0]
+            if myresult[2] == password:
+                return 1
+        return 2
     except mysql.connector.Error as err:
         print("Something went wrong: {}".format(err))
-        return "500 Internal Server Error"
+        return 3

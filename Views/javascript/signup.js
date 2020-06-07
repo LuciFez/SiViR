@@ -12,7 +12,7 @@ myForum.addEventListener('submit', function(e) {
     }) .then(function (response) {
         return response.json();
     }) .then (function (response) {
-        console.log(response);
+
         if (response.message !== "Success!") {
             alert(response.message)
         } else {
