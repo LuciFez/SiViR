@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c680904a-f6fe-4435-8b91-5b3497441106" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1aBdxwoTgPLmA7w2mbv1tKuK755" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql.8" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../CN/Tema4" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Cosmin\Desktop\Facultate\TW\poriect2" />
+      <recent name="C:\Users\Cosmin\Desktop\Facultate\TW\poriect2\Views" />
+      <recent name="C:\Users\Cosmin\Desktop\Facultate\TW\poriect2\Models" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.server">
+    <configuration name="ceva" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="poriect2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../PythonProjects/somethong" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../PythonProjects/somethong/ceva.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="keyGenereation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="poriect2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Models" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Models/keyGenereation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="server" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="poriect2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/server.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="signup" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="poriect2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Cosmin\Desktop\Facultate\TW\poriect2\Models\signup.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.server" />
+        <item itemvalue="Python.ceva" />
+        <item itemvalue="Python.keyGenereation" />
+        <item itemvalue="Python.signup" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c680904a-f6fe-4435-8b91-5b3497441106" name="Default Changelist" comment="" />
+      <created>1586213170514</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586213170514</updated>
+      <workItem from="1586213172423" duration="7794000" />
+      <workItem from="1586353024740" duration="581000" />
+      <workItem from="1586368683905" duration="875000" />
+      <workItem from="1586518751392" duration="632000" />
+      <workItem from="1586603672745" duration="955000" />
+      <workItem from="1587209057729" duration="10297000" />
+      <workItem from="1587250276743" duration="600000" />
+      <workItem from="1587327268269" duration="600000" />
+      <workItem from="1587471428476" duration="673000" />
+      <workItem from="1587474251530" duration="754000" />
+      <workItem from="1587554075412" duration="2632000" />
+      <workItem from="1587563330162" duration="473000" />
+      <workItem from="1587563889017" duration="5311000" />
+      <workItem from="1587817760485" duration="24195000" />
+      <workItem from="1587855443289" duration="46000" />
+      <workItem from="1587994628268" duration="2211000" />
+      <workItem from="1588047660199" duration="12644000" />
+      <workItem from="1588184246602" duration="18726000" />
+      <workItem from="1588346281169" duration="1112000" />
+      <workItem from="1588449177658" duration="3818000" />
+      <workItem from="1588520749017" duration="4429000" />
+      <workItem from="1588596923670" duration="2878000" />
+      <workItem from="1588663572013" duration="638000" />
+      <workItem from="1588770863702" duration="8341000" />
+      <workItem from="1588853671697" duration="1769000" />
+      <workItem from="1588952318479" duration="669000" />
+      <workItem from="1589046451138" duration="3333000" />
+      <workItem from="1589221580772" duration="594000" />
+      <workItem from="1589292125638" duration="418000" />
+      <workItem from="1589295577549" duration="1683000" />
+      <workItem from="1589553160988" duration="58000" />
+      <workItem from="1591274601927" duration="1107000" />
+      <workItem from="1591433930189" duration="5000" />
+      <workItem from="1591439205673" duration="37016000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="71" key="#SQL_Dialects" timestamp="1591471209631">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="71" key="#SQL_Dialects/0.0.1536.824@0.0.1536.824" timestamp="1591471209631" />
+    <state x="447" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587564028618">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="447" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1587564028618" />
+    <state x="524" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588450157741">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="524" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1588450157741" />
+    <state x="611" y="303" key="#com.jetbrains.python.refactoring.move.PyMoveModuleMembersDialog" timestamp="1587820521446">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="611" y="303" key="#com.jetbrains.python.refactoring.move.PyMoveModuleMembersDialog/0.0.1536.824@0.0.1536.824" timestamp="1587820521446" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1589553224523">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1589553224523" />
+    <state width="1493" height="174" key="GridCell.Tab.0.bottom" timestamp="1591535973047">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="174" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591535973047" />
+    <state width="1493" height="174" key="GridCell.Tab.0.center" timestamp="1591535973047">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="174" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1591535973047" />
+    <state width="1493" height="174" key="GridCell.Tab.0.left" timestamp="1591535973046">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="174" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1591535973046" />
+    <state width="1493" height="174" key="GridCell.Tab.0.right" timestamp="1591535973047">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="174" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1591535973047" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1591535713856">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591535713856" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1591535713855">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1591535713855" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1591535713855">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1591535713855" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1591535713855">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1591535713855" />
+    <state x="555" y="58" key="SettingsEditor" timestamp="1587563817603">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="555" y="58" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1587563817603" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1591443522245">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1591443522245" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1591439213990">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1591439213990" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1591442881059">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1591442881059" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/poriect2$server.coverage" NAME="server Coverage Results" MODIFIED="1591535973037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/poriect2$login.coverage" NAME="login Coverage Results" MODIFIED="1587564191717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/poriect2$keyGenereation.coverage" NAME="keyGenereation Coverage Results" MODIFIED="1591454386815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Models" />
+    <SUITE FILE_PATH="coverage/poriect2$ceva.coverage" NAME="ceva Coverage Results" MODIFIED="1591457674146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../../PythonProjects/somethong" />
+  </component>
+</project>
