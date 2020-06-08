@@ -1,6 +1,5 @@
 
 import googleapiclient.discovery
-import json
 
 def searchVideo(user, q, regioncode='us', ):
     api_key = 'AIzaSyDneNr5blVqIK3Khyfht4r3kR91PR_qWgM'
@@ -20,4 +19,3 @@ def searchVideo(user, q, regioncode='us', ):
     results = [{'id': i['id']['videoId'], 'thumbnail': i['snippet']['thumbnails']['medium'], 'title':i['snippet']['title'], 'description':i['snippet']['description']} for i in response['items']]
 
     return results
-

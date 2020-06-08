@@ -5,6 +5,7 @@ from controller.publicKeyController import *
 from controller.controllerFirstPage import *
 from controller.controllerQuestions import *
 from controller.controllerSearchVideo import *
+from controller.controllerWatch import *
 
 
 def notfound(environ, start_response):
@@ -82,5 +83,6 @@ if __name__ == '__main__':
     dispatcher.register('GET', '/getkey', controllerGetPubKey)
     dispatcher.register('GET', '/questionsPage', controllerQuestions)
     dispatcher.register('GET', '/firstPage', controllerFirstPage)
+    dispatcher.register('GET', '/watch', controllerWatch)
     httpd = make_server('localhost', 8000, dispatcher)
     httpd.serve_forever()
