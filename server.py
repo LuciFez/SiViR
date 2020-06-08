@@ -46,10 +46,13 @@ class PathDispatcher:
         path = environ['PATH_INFO']
         params = cgi.FieldStorage(environ['wsgi.input'], environ=environ)
         method = environ['REQUEST_METHOD'].lower()
+
         environ['params'] = {k: params.getvalue(k) for k in params}
+        print(environ['params'])
+
         if path.endswith(".jpg") or path.endswith(".png"):
             return handleIMG(environ, start_response)
-        elif path.endswith(".html") or path.endswith("js"):
+        elif path.endswith(".js"):
             return handleHTMLandJS(environ, start_response)
         elif path.endswith(".css"):
             return handleCSS(environ, start_response)
