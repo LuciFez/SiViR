@@ -23,14 +23,16 @@ myForum.addEventListener('submit', function(e) {
         var base64 = forge.util.encode64(encrypted);
         document.cookie = "passw  =" + base64 + ";" ;
         document.cookie =" uname = " + formData.get("uname");
+
         fetch('login', {
             method: 'GET', // aci trebuie post cu body username si pass, fara cookie
             credentials: "include"
         }).then ( response => {
             if( response.status === 200) {
                 response.text().then(function (response) {
-                    console.log(response);
-                    document.cookie = "jwt =" + response;
+                    console.log(response);                 
+                    localStorage.setItem('jwt',JSON.stringify(response))
+                    location.href="questionsPage";
                 });
 
             }

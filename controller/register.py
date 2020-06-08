@@ -1,7 +1,7 @@
 import sys
 import json
 sys.path.append('../')
-from Models.signup import *
+from model.signUp import *
 
 
 def controllerSignUpPOST(environ, start_response):
@@ -19,5 +19,5 @@ def controllerSignUpPOST(environ, start_response):
 
 def controllerSignUpGET(environ, start_response):
     start_response('200 OK', [('Content-text', 'text/html')])
-    response = open('Views/sign_up.html', 'r').read()
+    response = open('view/signup/sign_up.html', 'r').read()
     yield response.encode('utf-8')

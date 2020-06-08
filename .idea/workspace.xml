@@ -31,6 +31,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1aBdxwoTgPLmA7w2mbv1tKuK755" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -42,10 +45,10 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../CN/Tema4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -63,12 +66,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../PythonProjects/somethong" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/PythonProjects/somethong" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../PythonProjects/somethong/ceva.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/PythonProjects/somethong/ceva.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -153,6 +156,16 @@
     </recent_temporary>
   </component>
   <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
     <option name="showServicesTree" value="false" />
   </component>
   <component name="SvnConfiguration">
@@ -226,21 +239,25 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1589553224523" />
-    <state width="724" height="174" key="GridCell.Tab.0.bottom" timestamp="1591548219549">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1899" height="184" key="GridCell.Tab.0.bottom" timestamp="1591618534226">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
+    <state width="1899" height="184" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591618534226" />
     <state width="724" height="174" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591548219549" />
-    <state width="724" height="174" key="GridCell.Tab.0.center" timestamp="1591548219549">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1899" height="184" key="GridCell.Tab.0.center" timestamp="1591618534226">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
+    <state width="1899" height="184" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591618534226" />
     <state width="724" height="174" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1591548219549" />
-    <state width="724" height="174" key="GridCell.Tab.0.left" timestamp="1591548219549">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1899" height="184" key="GridCell.Tab.0.left" timestamp="1591618534226">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
+    <state width="1899" height="184" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591618534226" />
     <state width="724" height="174" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1591548219549" />
-    <state width="724" height="174" key="GridCell.Tab.0.right" timestamp="1591548219549">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1899" height="184" key="GridCell.Tab.0.right" timestamp="1591618534226">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
+    <state width="1899" height="184" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591618534226" />
     <state width="724" height="174" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1591548219549" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1591535713856">
       <screen x="0" y="0" width="1536" height="824" />
@@ -258,27 +275,24 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1591535713855" />
-    <state x="555" y="58" key="SettingsEditor" timestamp="1587563817603">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="2614" y="73" key="SettingsEditor" timestamp="1591556124065">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
+    <state x="2614" y="73" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591556124065" />
     <state x="555" y="58" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1587563817603" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1591443522245">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1591443522245" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1591439213990">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="388" y="195" key="com.intellij.ide.util.TipDialog" timestamp="1591612743363">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state x="388" y="195" key="com.intellij.ide.util.TipDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591612743363" />
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1591439213990" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1591442881059">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="2459" y="183" width="840" height="856" key="search.everywhere.popup" timestamp="1591613755067">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
+    <state x="2459" y="183" width="840" height="856" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591613755067" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1591442881059" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/poriect2$server.coverage" NAME="server Coverage Results" MODIFIED="1591548219538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/poriect2$login.coverage" NAME="login Coverage Results" MODIFIED="1587564191717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/poriect2$keyGenereation.coverage" NAME="keyGenereation Coverage Results" MODIFIED="1591454386815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Models" />
-    <SUITE FILE_PATH="coverage/poriect2$ceva.coverage" NAME="ceva Coverage Results" MODIFIED="1591457674146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../../PythonProjects/somethong" />
   </component>
 </project>

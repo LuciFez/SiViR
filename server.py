@@ -1,7 +1,9 @@
 import cgi
-from Controllers.register import *
-from Controllers.loginController import *
-from Controllers.publicKeyController import *
+from controller.register import *
+from controller.loginController import *
+from controller.publicKeyController import *
+from controller.controllerFirstPage import *
+from controller.controllerQuestions import *
 
 
 def notfound(environ, start_response):
@@ -12,7 +14,7 @@ def notfound(environ, start_response):
 def handleIMG(environ, start_response):
     path = environ['PATH_INFO']
     try:
-        response = open("Views/" + path, "rb").read()
+        response = open("view/" + path, "rb").read()
 
         start_response('200 OK', [('content-type', 'image/png')
             , ('content-length', str(len(response)))])
@@ -25,14 +27,14 @@ def handleIMG(environ, start_response):
 def handleCSS(environ, start_response):
     path = environ['PATH_INFO']
     start_response('200 OK', [('Content-text', 'text/css')])
-    response = open('Views' + path, 'rb').read()
+    response = open('view' + path, 'rb').read()
     yield response
 
 
 def handleHTMLandJS(environ, start_response):
     path = environ['PATH_INFO']
     start_response('200 OK', [('Content-text', 'text/html')])
-    response = open('Views' + path, 'rb').read()
+    response = open('view' + path, 'rb').read()
     yield response
 
 
@@ -62,18 +64,20 @@ class PathDispatcher:
 
 def index(environ, start_response):
     start_response('200 OK', [('Content-text', 'text/html')])
-    response = open('Views/main.html', 'r').read()
+    response = open('view/login/login.html', 'r').read()
     yield response.encode('utf-8')
 
 
 if __name__ == '__main__':
     from wsgiref.simple_server import make_server
 
-    dispatcher = PathDispatcher()
-    dispatcher.register('GET', '/', index) #
+    dispatcher = PathDispatcher() 
+    dispatcher.register('GET', '/', index)
     dispatcher.register('POST', '/signup', controllerSignUpPOST)
     dispatcher.register('GET', '/signup', controllerSignUpGET)
     dispatcher.register('GET', '/login', loginGET)
     dispatcher.register('GET', '/getkey', controllerGetPubKey)
+    dispatcher.register('GET', '/questionsPage', controllerQuestions)
+    dispatcher.register('GET', '/firstPage', controllerFirstPage)
     httpd = make_server('localhost', 8000, dispatcher)
     httpd.serve_forever()
