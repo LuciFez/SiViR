@@ -11,9 +11,9 @@ def controllerSignUpPOST(environ, start_response):
     if response == "201 Created":
         message = {"message": "Success!"}
     elif response == "400 Bad Request":
-        message = {"message": "Bad ceva"}
+        message = {"message": "Please complete all the fields"}
     else:
-        message = {"message": "Nu stiu inca"}
+        message = {"message": "Username already in use"}
     yield json.dumps(message).encode('utf-8')
 
 

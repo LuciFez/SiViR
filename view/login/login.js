@@ -31,7 +31,7 @@ myForum.addEventListener('submit', function(e) {
             if( response.status === 200) {
                 response.text().then(function (response) {
                     console.log(response);                 
-                    localStorage.setItem('jwt',JSON.stringify(response))
+                    document.cookie =  "jwt  =" + response + ";" ;
                     location.href="questionsPage";
                 });
 

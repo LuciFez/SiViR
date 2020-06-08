@@ -2,7 +2,7 @@
 import googleapiclient.discovery
 import json
 
-def searchVido(user, q, regioncode='us', ):
+def searchVideo(user, q, regioncode='us', ):
     api_key = 'AIzaSyDneNr5blVqIK3Khyfht4r3kR91PR_qWgM'
     api_service_name = "youtube"
     api_version = "v3"
@@ -17,14 +17,7 @@ def searchVido(user, q, regioncode='us', ):
         type="video"
     )
     response = request.execute()
-    print(response)
-    results = [{'id': i['id']['videoId'], 'thumbnails': i['snippet']['thumbnails']['high'], 'title':i['snippet']['title'], 'description':i['snippet']['description']} for i in response['items']]
+    results = [{'id': i['id']['videoId'], 'thumbnail': i['snippet']['thumbnails']['medium'], 'title':i['snippet']['title'], 'description':i['snippet']['description']} for i in response['items']]
 
-    for i in results:
-        print(i)
+    return results
 
-    return json.dumps(results)
-
-
-if __name__ == '__main__':
-    searchVido('dads', 'dani mocanu')

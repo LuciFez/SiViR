@@ -4,6 +4,7 @@ from controller.loginController import *
 from controller.publicKeyController import *
 from controller.controllerFirstPage import *
 from controller.controllerQuestions import *
+from controller.controllerSearchVideo import *
 
 
 def notfound(environ, start_response):
@@ -16,8 +17,7 @@ def handleIMG(environ, start_response):
     try:
         response = open("view/" + path, "rb").read()
 
-        start_response('200 OK', [('content-type', 'image/png')
-            , ('content-length', str(len(response)))])
+        start_response('200 OK', [('content-type', 'image/png'), ('content-length', str(len(response)))])
         return [response]
     except IOError:
         print(path)
@@ -48,7 +48,6 @@ class PathDispatcher:
         method = environ['REQUEST_METHOD'].lower()
 
         environ['params'] = {k: params.getvalue(k) for k in params}
-        print(environ['params'])
 
         if path.endswith(".jpg") or path.endswith(".png"):
             return handleIMG(environ, start_response)
@@ -79,6 +78,7 @@ if __name__ == '__main__':
     dispatcher.register('POST', '/signup', controllerSignUpPOST)
     dispatcher.register('GET', '/signup', controllerSignUpGET)
     dispatcher.register('GET', '/login', loginGET)
+    dispatcher.register('GET', '/search', controllerSearch)
     dispatcher.register('GET', '/getkey', controllerGetPubKey)
     dispatcher.register('GET', '/questionsPage', controllerQuestions)
     dispatcher.register('GET', '/firstPage', controllerFirstPage)
