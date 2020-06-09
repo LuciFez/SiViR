@@ -3,7 +3,7 @@ import json
 sys.path.append('../')
 from model.youtubeAPI import *
 from model.util import checkJWT
-
+from model.instagramApi import instagramAPI
 
 
 def controllerSearch(environ, start_response):
@@ -27,6 +27,13 @@ def controllerSearch(environ, start_response):
 
             html = open("view/search/search.html", "r").read().format(videos=html_videos)
             start_response('200 OK', [('Content-text', 'text/plain')])
+
+            responseInsta = instagramAPI('video')
+
+            for a in responseInsta['json_data']['data']:
+                if a['media_type'] == 'VIDEO':
+                    print(a['media_url'])
+
             yield html.encode('utf-8')
     else:
         start_response("400 Bad Request", [('Content-text', 'text/plain')])

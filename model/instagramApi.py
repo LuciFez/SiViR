@@ -5,7 +5,7 @@ import requests
 import json
 
 
-def instagramAPI():
+def instagramAPI(tag):
     creds = setCreds()
 
     # r = getToken(creds) #short life token
@@ -13,15 +13,9 @@ def instagramAPI():
     #getUserPages(creds) #get page id to get Instagram Account ID
     #getInstagramAccount(creds) #get instagram account id
 
-    tag = 'video'
     tag_id = getHashTacgInfo(creds,tag)
 
-    getHashTagMedia(creds,tag_id,'top_media')
-
-    print("AM AJUNS AICI")
-
-
-
+    return getHashTagMedia(creds,tag_id,'top_media')
 
 def getHashTagMedia(creds,tag_id,type):
     creds['debug'] = 'no'
@@ -33,10 +27,6 @@ def getHashTagMedia(creds,tag_id,type):
     url = creds['endpoint_base'] + tag_id + '/'+ type
 
     response = makeApiCall(url, endpointParams, creds['debug'])
-
-    for a in response['json_data']['data']:
-        if a['media_type'] == 'VIDEO':
-            print(a['media_url'])
 
     return response
 
