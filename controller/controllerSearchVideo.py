@@ -28,11 +28,11 @@ def controllerSearch(environ, start_response):
             html = open("view/search/search.html", "r").read().format(videos=html_videos)
             start_response('200 OK', [('Content-text', 'text/plain')])
 
-            responseInsta = instagramAPI('video')
+            # responseInsta = instagramAPI('video')
 
-            for a in responseInsta['json_data']['data']:
-                if a['media_type'] == 'VIDEO':
-                    print(a['media_url'])
+            # for a in responseInsta['json_data']['data']:
+            #     if a['media_type'] == 'VIDEO':
+            #         print(a['media_url'])
 
             yield html.encode('utf-8')
     else:
