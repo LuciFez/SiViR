@@ -24,7 +24,7 @@ def getHashTagMedia(creds,tag_id,type):
     endpointParams['fields'] = 'id,children,caption,comment_count,like_count,media_type,media_url,permalink'
     endpointParams['access_token'] = creds['access_token']
 
-    url = creds['endpoint_base'] + tag_id + '/'+ type
+    url = creds['endpoint_base'] + tag_id + '/'+type
 
     response = makeApiCall(url, endpointParams, creds['debug'])
 
@@ -119,9 +119,13 @@ def makeApiCall(url,endpointParams, debug = 'no'):
     return response
 
 def displayApiCallData(response):
-    print ("\nURL: ")
-    print (response['url'])
-    print ("\nEndpoint Params: ")
-    print (response['endpoint_params_pretty'])
-    print ("\nJSON DATA: ")
-    print (response['json_data_pretty'])
+    print("\nURL: ")
+    print(response['url'])
+    print("\nEndpoint Params: ")
+    print(response['endpoint_params_pretty'])
+    print("\nJSON DATA: ")
+    print(response['json_data_pretty'])
+
+def getEmbeddings(url):
+    response = requests.get("https://api.instagram.com/oembed?url="+url+"&access_token=EAAJ2H6BCQIYBAHVxP78rT1hIdv3ZC89MfWhhS8ZBS09o8w0ZB4fMZCIxfITFHQYkfOckWb9p7C9ll8I1ZBKAY59kPosXAw8M2jEYMjbGJBvSHhY8LPt0NMzgDVooGXZBfPGKqZAtTGRUlKjyLgaJNjY7c88nFxIePotHutKH7aKzqgMdBZAWeZC3d")
+    return response

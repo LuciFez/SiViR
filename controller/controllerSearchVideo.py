@@ -3,7 +3,7 @@ import json
 sys.path.append('../')
 from model.youtubeAPI import *
 from model.util import checkJWT
-from model.instagramApi import instagramAPI
+from model.instagramApi import instagramAPI, getEmbeddings
 
 
 def controllerSearch(environ, start_response):
@@ -25,18 +25,19 @@ def controllerSearch(environ, start_response):
                                             description=i['description'])
                 html_videos += html_video
 
+            responseInsta = instagramAPI('video')
+            for a in responseInsta['json_data']['data']:
+                if 'permalink' in a:
+                    response = getEmbeddings(a['permalink']).content.decode('utf-8')
+                    if response != 'No Media Match':
+                        x = json.loads(response)
+                        print(x['html'])
+                        html_videos += x['html']
+
             html = open("view/search/search.html", "r").read().format(videos=html_videos)
             start_response('200 OK', [('Content-text', 'text/plain')])
-
-            # responseInsta = instagramAPI('video')
-
-            # for a in responseInsta['json_data']['data']:
-            #     if a['media_type'] == 'VIDEO':
-            #         print(a['media_url'])
-
             yield html.encode('utf-8')
     else:
         start_response("400 Bad Request", [('Content-text', 'text/plain')])
         message = {"message": "Empty query"}
         yield json.dumps(message).encode('utf-8')
-
