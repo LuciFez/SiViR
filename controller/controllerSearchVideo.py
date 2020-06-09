@@ -3,7 +3,8 @@ import json
 sys.path.append('../')
 from model.youtubeAPI import *
 from model.util import checkJWT
-from model.instagramApi import instagramAPI, getEmbeddings
+from model.instagramApi import *
+from model.vimeoApi import *
 
 
 def controllerSearch(environ, start_response):
@@ -36,6 +37,13 @@ def controllerSearch(environ, start_response):
 
             html = open("view/search/search.html", "r").read().format(videos=html_videos)
             start_response('200 OK', [('Content-text', 'text/plain')])
+
+
+            vimeoJson = vimeoFirst('Cat')
+            for a in vimeoJson['data']:
+                if 'link' in a:
+                    print(a)
+
             yield html.encode('utf-8')
     else:
         start_response("400 Bad Request", [('Content-text', 'text/plain')])
