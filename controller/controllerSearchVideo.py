@@ -3,7 +3,8 @@ import json
 sys.path.append('../')
 from model.youtubeAPI import *
 from model.util import checkJWT
-from model.instagramApi import instagramAPI
+from model.instagramApi import *
+from model.vimeoApi import *
 
 
 def controllerSearch(environ, start_response):
@@ -32,7 +33,15 @@ def controllerSearch(environ, start_response):
 
             for a in responseInsta['json_data']['data']:
                 if a['media_type'] == 'VIDEO':
-                    print(a['media_url'])
+                    if 'media_url' in a:
+                        print(a['media_url'])
+                    elif 'permalink' in a:
+                        print(a['permalink'])
+
+            vimeoJson = vimeoFirst('Cat')
+            for a in vimeoJson['data']:
+                if 'link' in a:
+                    print(a)
 
             yield html.encode('utf-8')
     else:

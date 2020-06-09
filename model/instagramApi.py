@@ -4,7 +4,6 @@ sys.path.append('../')
 import requests
 import json
 
-
 def instagramAPI(tag):
     creds = setCreds()
 
