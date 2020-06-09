@@ -1,6 +1,5 @@
 
 import googleapiclient.discovery
-import pprint
 
 def buildAPI():
     api_key = 'AIzaSyDneNr5blVqIK3Khyfht4r3kR91PR_qWgM'
@@ -48,14 +47,10 @@ def getcomments(id):
     )
 
     response = request.execute()
-    print(response)
     response = response['items']
-
     comments = list()
     for i in response:
         i = i['snippet']['topLevelComment']['snippet']
         comments.append({'author': i['authorDisplayName'], 'text': i['textOriginal']})
 
-
-    print(comments)
     return comments
