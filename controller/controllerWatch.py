@@ -2,7 +2,7 @@ import sys
 import json
 sys.path.append('../')
 from model.util import checkJWT
-from model.youtubeAPI import videoPlayer, getcomments
+from model.youtubeAPI import videoPlayer, getcomments,getRecomandation
 
 
 def controllerWatch(environ, start_response):
@@ -26,8 +26,19 @@ def controllerWatch(environ, start_response):
             comment = template.format(author=i['author'], text=i['text'])
             commentsHTML += comment
 
+        videos = getRecomandation(id)
+        template = open("view/search/video.html", "r").read()
+        html_videos = ""
+
+        for i in  n:
+            html_video = template.format(id=i['id'],
+                                        srcthumbnail=i['thumbnail'],
+                                        title=i['title'],
+                                        description=i['description'])
+            html_videos += html_video
+
         template = open("view/watch/watch.html", "r").read()
-        html = template.format(id=id, title=video['title'], description=video['description'], comments=commentsHTML)
+        html = template.format(id=id, title=video['title'], description=video['description'], comments=commentsHTML, recommendations=html_videos)
         yield html.encode('utf-8')
     else:
         start_response("400 Bad Request", [('Content-text', 'text/plain')])

@@ -33,7 +33,6 @@ myForum.addEventListener('submit', function(e) {
                     document.cookie =  "jwt  =" + response + ";" ;
                     location.href="questionsPage";
                 });
-
             }
             else {
                 response.json().then( function (response) {

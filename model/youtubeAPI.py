@@ -2,7 +2,7 @@
 import googleapiclient.discovery
 
 def buildAPI():
-    api_key = 'AIzaSyDneNr5blVqIK3Khyfht4r3kR91PR_qWgM'
+    api_key = 'AIzaSyDxGqE0hqfePEPK7uL_jbaMMAcVPJKn3sA'
     api_service_name = "youtube"
     api_version = "v3"
 
@@ -15,13 +15,12 @@ def searchVideo(user, q, regioncode='ro'):
     request = youtube.search().list(
         part="snippet",
         q=q,
-        maxResults=10,
+        maxResults=1,
         regionCode=regioncode,
         type="video"
     )
     response = request.execute()
-    results = [{'id': i['id']['videoId'], 'thumbnail': i['snippet']['thumbnails']['medium'], 'title':i['snippet']['title'], 'description':i['snippet']['description']} for i in response['items']]
-
+    results = [{'id': i['id']['videoId'], 'thumbnail': i['snippet']['thumbnails']['medium']['url'], 'title':i['snippet']['title'], 'description':i['snippet']['description']} for i in response['items']]
     return results
 
 def videoPlayer(id):
@@ -41,7 +40,7 @@ def getcomments(id):
 
     request = youtube.commentThreads().list(
         part="snippet",
-        maxResults=10,
+        maxResults=1,
         order="relevance",
         videoId=id
     )
@@ -54,3 +53,20 @@ def getcomments(id):
         comments.append({'author': i['authorDisplayName'], 'text': i['textOriginal']})
 
     return comments
+
+
+def getRecomandation(id, regioncode='ro'):
+    youtube = buildAPI()
+
+    request = youtube.search().list(
+        part="snippet",
+        maxResults=2,
+        regionCode=regioncode,
+        relatedToVideoId=id,
+        type="video"
+    )
+
+    response = request.execute()
+    results = [{'id': i['id']['videoId'], 'thumbnail': i['snippet']['thumbnails']['medium']['url'], 'title':i['snippet']['title'], 'description':i['snippet']['description']} for i in response['items']]
+
+    return results
