@@ -28,12 +28,13 @@ def controllerSearch(environ, start_response):
 
             responseInsta = instagramAPI('video')
             for a in responseInsta['json_data']['data']:
-                if 'permalink' in a:
-                    response = getEmbeddings(a['permalink']).content.decode('utf-8')
-                    if response != 'No Media Match':
-                        x = json.loads(response)
-                        print(x['html'])
-                        html_videos += x['html']
+                if a['media_type'] == "VIDEO":
+                    if 'permalink' in a:
+                        response = getEmbeddings(a['permalink']).content.decode('utf-8')
+                        if response != 'No Media Match':
+                            x = json.loads(response)
+                            print(x['html'])
+                            html_videos += x['html']
 
             html = open("view/search/search.html", "r").read().format(videos=html_videos)
             start_response('200 OK', [('Content-text', 'text/plain')])
