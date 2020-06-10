@@ -65,24 +65,18 @@ class PathDispatcher:
         return function
 
 
-def index(environ, start_response):
-    start_response('200 OK', [('Content-text', 'text/html')])
-    response = open('view/login/login.html', 'r').read()
-    yield response.encode('utf-8')
-
 
 if __name__ == '__main__':
     from wsgiref.simple_server import make_server
 
-    dispatcher = PathDispatcher() 
-    dispatcher.register('GET', '/', index)
+    dispatcher = PathDispatcher()
     dispatcher.register('POST', '/signup', controllerSignUpPOST)
     dispatcher.register('GET', '/signup', controllerSignUpGET)
     dispatcher.register('GET', '/login', loginGET)
     dispatcher.register('GET', '/search', controllerSearch)
     dispatcher.register('GET', '/getkey', controllerGetPubKey)
     dispatcher.register('GET', '/questionsPage', controllerQuestions)
-    dispatcher.register('GET', '/firstPage', controllerFirstPage)
+    dispatcher.register('GET', '/', controllerFirstPage)
     dispatcher.register('GET', '/watch', controllerWatch)
     httpd = make_server('localhost', 8000, dispatcher)
     httpd.serve_forever()

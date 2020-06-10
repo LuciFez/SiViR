@@ -4,6 +4,10 @@ sys.path.append('../')
 import requests
 import json
 
+from instagram.client import InstagramAPI
+
+
+
 def instagramAPI(tag):
     creds = setCreds()
 
@@ -128,3 +132,14 @@ def displayApiCallData(response):
 def getEmbeddings(url):
     response = requests.get("https://api.instagram.com/oembed?url="+url+"&access_token=EAAJ2H6BCQIYBAHVxP78rT1hIdv3ZC89MfWhhS8ZBS09o8w0ZB4fMZCIxfITFHQYkfOckWb9p7C9ll8I1ZBKAY59kPosXAw8M2jEYMjbGJBvSHhY8LPt0NMzgDVooGXZBfPGKqZAtTGRUlKjyLgaJNjY7c88nFxIePotHutKH7aKzqgMdBZAWeZC3d")
     return response
+
+def getEmbeddings(url):
+    response = requests.get("https://api.instagram.com/oembed?url="+url)
+    return response
+
+def getEmbeddings(url):
+    response = requests.get("https://api.instagram.com/oembed?url="+url)
+    return response
+
+
+

@@ -9,7 +9,7 @@ def buildAPI():
     return googleapiclient.discovery.build(api_service_name, api_version, developerKey=api_key)
 
 
-def searchVideo(user, q, regioncode='us', ):
+def searchVideo(user, q, regioncode='ro'):
     youtube = buildAPI()
 
     request = youtube.search().list(

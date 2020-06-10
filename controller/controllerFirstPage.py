@@ -1,11 +1,14 @@
 import sys
-from model.instagramApi import instagramAPI
-
+from model.util import checkJWT
 sys.path.append('../')
+
 
 def controllerFirstPage(environ, start_response):
     start_response('200 OK', [('Content-text', 'text/html')])
-    file = open("view/firstPage/firstPage.html", "r").read()
-    yield file.encode('utf-8')
+    if checkJWT(environ):
+        response = open("view/firstPage/firstPage.html", "r").read()
+    else:
+        response = open('view/login/login.html', 'r').read()
+    yield response.encode('utf-8')
 
 

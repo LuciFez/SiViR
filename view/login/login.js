@@ -30,7 +30,6 @@ myForum.addEventListener('submit', function(e) {
         }).then ( response => {
             if( response.status === 200) {
                 response.text().then(function (response) {
-                    console.log(response);                 
                     document.cookie =  "jwt  =" + response + ";" ;
                     location.href="questionsPage";
                 });
