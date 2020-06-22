@@ -69,6 +69,7 @@ input:-webkit-autofill:focus {
     background-position: center;
     background-size: 30px;
     align-items: center;
+    cursor: pointer;
 }
 
 
