@@ -14,7 +14,7 @@ def searchVideo(user, q, regioncode='ro'):
     request = youtube.search().list(
         part="snippet",
         q=q,
-        maxResults=2,
+        maxResults=10,
         regionCode=regioncode,
         type="video"
     )
@@ -44,7 +44,7 @@ def getcomments(id):
 
     request = youtube.commentThreads().list(
         part="snippet",
-        maxResults=2,
+        maxResults=5,
         order="relevance",
         videoId=id
     )
