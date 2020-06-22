@@ -53,6 +53,8 @@ from model.vimeoApi import *
 #         start_response("400 Bad Request", [('Content-text', 'text/plain')])
 #         message = {"message": "Empty query"}
 #         yield json.dumps(message).encode('utf-8')
+
+
 def controllerSearch(environ, start_response):
     params = environ['params']
     user = checkJWT(environ)

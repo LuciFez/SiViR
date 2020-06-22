@@ -1,49 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Title</title>
-    <link rel="stylesheet" href=" watch/style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href=" watch/style.css" />
+  </head>
+  <body>
     <header>
-        <a id="logo" href="/">SiViR</a>
-        <form id="search-form">
-            <input id="q" type="text" name="q" placeholder="Search" spellcheck="false"/>
-             <button id="search-button">Search  </button>
-            <div id="dropdown-button">
-                <div id="dropdown" class="dropdown-content">
-                    <select id="platform" name="platform" class="dropdown-content-element">
-                        <option value="youtube">YouTube</option>
-                        <option value="instagram">Instagram</option>
-                        <option value="youtube">Vimeo</option>
-                    </select>
-                    <div id="criteria-platform" class="dropdown-content-element">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, repellat.</div>
-                </div>
+      <a id="logo" href="/">SiViR</a>
+      <form id="search-form">
+        <input
+          id="q"
+          type="text"
+          name="q"
+          placeholder="Search"
+          spellcheck="false"
+        />
+        <button id="search-button">Search</button>
+        <div id="dropdown-button">
+          <div id="dropdown" class="dropdown-content">
+            <select
+              id="platform"
+              name="platform"
+              class="dropdown-content-element"
+            >
+              <option value="youtube">YouTube</option>
+              <option value="instagram">Instagram</option>
+              <option value="youtube">Vimeo</option>
+            </select>
+            <div id="criteria-platform" class="dropdown-content-element">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum,
+              repellat.
             </div>
-
-        </form>
-        <div><h2>Nume Utilizator</h2></div>
+          </div>
+        </div>
+      </form>
+      <div><h2>Nume Utilizator</h2></div>
     </header>
 
     <div class="container">
-        <iframe
-            src="https://www.youtube.com/embed/{id}?autoplay=1&loop=1">
-        </iframe>
-        <div class="about">
-            <div class="wrapper-title">
-                <h1>{title}</h1>
-                <p>{description}</p>
-            </div>
-            <div class="comment-section">
-                {comments}
-            </div>
+        <div class="title">
+          <h1>{title}</h1>
         </div>
-
+        <iframe src="https://www.youtube.com/embed/{id}?autoplay=1&loop=1">
+        </iframe>
+        <div class="description">
+           <h3>Description</h3>
+          <input type="checkbox" id="expanded" />
+          <p class="text-truncate">
+            {description}
+          </p>
+          <label for="expanded"> read more</label>
+        </div>
+        <div class="comments">
+            <h3>Comments</h3>
+          {comments}
+        </div>
+      </div>
     </div>
     <div class="gird">
-        {recommendations}
+      {recommendations}
     </div>
-</body>
+  </body>
 </html>
