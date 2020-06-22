@@ -12,6 +12,6 @@ function redirect() {
     document.cookie = " question2Response = " + q2;
     document.cookie = " question3Response = " + q3;
 
-    window.location.replace("firstPage");
+    window.location.replace("/");
     return false;
 }

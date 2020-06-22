@@ -24,7 +24,6 @@ def loginGET(environ, start_response):
     if login_status == 1:
         start_response('200 OK', [('Content-text', 'text/plain')])
         encoded_jwt = jwt.encode({'uname': uname, 'iat': datetime.utcnow()}, 'secret', algorithm='HS256')
-        message = {"jwt": encoded_jwt.decode('utf-8')}
         yield encoded_jwt
     elif login_status == 2:
         start_response('401 Unauthorized', [('Content-text', 'text/plain')])

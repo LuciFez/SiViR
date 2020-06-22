@@ -2,7 +2,8 @@ import sys
 import json
 sys.path.append('../')
 from model.util import checkJWT
-from model.youtubeAPI import videoPlayer, getcomments,getRecomandation
+from model.youtubeAPI import videoPlayer, getcomments,getRecommendation
+from model.similarity import calculateSimilarity
 
 
 def controllerWatch(environ, start_response):
@@ -10,7 +11,7 @@ def controllerWatch(environ, start_response):
     user = checkJWT(environ)
     if not user:
         start_response('401 Unauthorized', [('Content-text', 'text/plain')])
-        message = {"message": "Bad username or password"}
+        message = {"message": "Not logged in."}
         yield json.dumps(message).encode('utf-8')
     if 'v' in params:
         start_response('200 OK', [('Content-text', 'text/plain')])
@@ -26,11 +27,20 @@ def controllerWatch(environ, start_response):
             comment = template.format(author=i['author'], text=i['text'])
             commentsHTML += comment
 
-        videos = getRecomandation(id)
+        videos = getRecommendation(id)
+        print(video)
+        print(videos)
+
+        print(calculateSimilarity(video, videos))
+
+
+
+
         template = open("view/search/video.html", "r").read()
+
         html_videos = ""
 
-        for i in  n:
+        for i in videos:
             html_video = template.format(id=i['id'],
                                         srcthumbnail=i['thumbnail'],
                                         title=i['title'],

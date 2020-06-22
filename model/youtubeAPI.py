@@ -1,8 +1,7 @@
-
 import googleapiclient.discovery
 
 def buildAPI():
-    api_key = 'AIzaSyDxGqE0hqfePEPK7uL_jbaMMAcVPJKn3sA'
+    api_key = 'AIzaSyDneNr5blVqIK3Khyfht4r3kR91PR_qWgM'
     api_service_name = "youtube"
     api_version = "v3"
 
@@ -15,24 +14,29 @@ def searchVideo(user, q, regioncode='ro'):
     request = youtube.search().list(
         part="snippet",
         q=q,
-        maxResults=1,
+        maxResults=2,
         regionCode=regioncode,
         type="video"
     )
     response = request.execute()
-    results = [{'id': i['id']['videoId'], 'thumbnail': i['snippet']['thumbnails']['medium']['url'], 'title':i['snippet']['title'], 'description':i['snippet']['description']} for i in response['items']]
+    results = [{'id': i['id']['videoId'],
+                'thumbnail': i['snippet']['thumbnails']['medium']['url'],
+                'title':i['snippet']['title'],
+                'description':i['snippet']['description']}
+               for i in response['items']]
     return results
 
 def videoPlayer(id):
     youtube = buildAPI()
 
     request = youtube.videos().list(
-        part="snippet, statistics",
+        part="snippet",
         id=id
     )
     response = request.execute()
     response = response['items'][0]
-    result = {'title': response['snippet']['title'], 'description': response['snippet']['description']}
+    result = {'title': response['snippet']['title'],
+              'description': response['snippet']['description']}
     return result
 
 def getcomments(id):
@@ -40,7 +44,7 @@ def getcomments(id):
 
     request = youtube.commentThreads().list(
         part="snippet",
-        maxResults=1,
+        maxResults=2,
         order="relevance",
         videoId=id
     )
@@ -55,18 +59,22 @@ def getcomments(id):
     return comments
 
 
-def getRecomandation(id, regioncode='ro'):
+def getRecommendation(id, regioncode='ro'):
     youtube = buildAPI()
 
     request = youtube.search().list(
         part="snippet",
-        maxResults=2,
+        maxResults=10,
         regionCode=regioncode,
         relatedToVideoId=id,
         type="video"
     )
 
     response = request.execute()
-    results = [{'id': i['id']['videoId'], 'thumbnail': i['snippet']['thumbnails']['medium']['url'], 'title':i['snippet']['title'], 'description':i['snippet']['description']} for i in response['items']]
+    results = [{'id': i['id']['videoId'],
+                'thumbnail': i['snippet']['thumbnails']['high']['url'],
+                'title':i['snippet']['title'],
+                'description':i['snippet']['description']}
+               for i in response['items']]
 
     return results

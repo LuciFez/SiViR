@@ -4,8 +4,6 @@ sys.path.append('../')
 import requests
 import json
 
-from instagram.client import InstagramAPI
-
 
 
 def instagramAPI(tag):
