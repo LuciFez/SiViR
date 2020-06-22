@@ -1,7 +1,7 @@
 import googleapiclient.discovery
 
 def buildAPI():
-    api_key = 'AIzaSyDneNr5blVqIK3Khyfht4r3kR91PR_qWgM'
+    api_key = ''
     api_service_name = "youtube"
     api_version = "v3"
 

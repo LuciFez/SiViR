@@ -87,4 +87,4 @@ window.addEventListener("resize", resizeAllGridItems);
 
 setTimeout(function(){
     resizeAllGridItems()
-}, 10);
+}, 5000);
