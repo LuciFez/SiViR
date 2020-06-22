@@ -4,6 +4,7 @@ sys.path.append('../')
 from model.util import checkJWT
 from model.youtubeAPI import videoPlayer, getcomments,getRecommendation
 from model.similarity import calculateSimilarity
+from controller.controllerRSS import setRSS
 
 
 def controllerWatch(environ, start_response):
@@ -28,13 +29,10 @@ def controllerWatch(environ, start_response):
             commentsHTML += comment
 
         videos = getRecommendation(id)
-        print(video)
-        print(videos)
+
+        setRSS(videos)
 
         videos = calculateSimilarity(video, videos)
-
-
-
 
         template = open("view/search/video.html", "r").read()
 

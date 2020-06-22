@@ -65,7 +65,6 @@ def controllerSearch(environ, start_response):
     if 'q' in params:
             videos = {'videos': searchVideo('inca nu e relevant', params['q'])}
             start_response('200 OK', [('Content-text', 'text/plain')])
-
             yield json.dumps(videos).encode('utf-8')
     else:
         start_response("400 Bad Request", [('Content-text', 'text/plain')])

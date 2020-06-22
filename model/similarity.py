@@ -20,7 +20,6 @@ def calculateSimilarity(info_video, suggestions):
     for i in range(len(suggestions)):
         suggestions[i]['similarity'] = similarity[i][1][0]
     similarity.sort(key=lambda x: x[1], reverse=True)
-    print(suggestions)
     return suggestions
 
 
