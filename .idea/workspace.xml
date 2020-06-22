@@ -2,14 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c680904a-f6fe-4435-8b91-5b3497441106" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/view/watch/comment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/poriect2.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/controllerSearchVideo.py" beforeDir="false" afterPath="$PROJECT_DIR$/controller/controllerSearchVideo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/controllerWatch.py" beforeDir="false" afterPath="$PROJECT_DIR$/controller/controllerWatch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/watch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/model/youtubeAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/youtubeAPI.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/home/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/home/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/watch/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/watch/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/watch/watch.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/watch/watch.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/watch/watch.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/watch/watch.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,10 +38,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
-        <option value="JavaScript File" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -50,6 +55,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql.8" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -57,14 +63,15 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.project" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Cosmin\Desktop\SiViR\view\img" />
+      <recent name="C:\Users\Cosmin\Desktop\SiViR\view\firstPage" />
       <recent name="C:\Users\lcubersc\Desktop\Proiect TW\SiViR\model" />
       <recent name="C:\Users\Cosmin\Desktop\Facultate\TW\poriect2" />
       <recent name="C:\Users\Cosmin\Desktop\Facultate\TW\poriect2\Views" />
-      <recent name="C:\Users\Cosmin\Desktop\Facultate\TW\poriect2\Models" />
     </key>
   </component>
   <component name="RunManager" selected="Python.server">
@@ -113,13 +120,13 @@
       <method v="2" />
     </configuration>
     <configuration name="server" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="poriect2" />
+      <module name="SiViR" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Python376\python.exe" />
+      <option name="SDK_HOME" value="C:\Users\Cosmin\Anaconda3\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -156,15 +163,39 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="similarity" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SiViR" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/model" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/model/similarity.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.ceva" />
       <item itemvalue="Python.keyGenereation" />
       <item itemvalue="Python.server" />
       <item itemvalue="Python.signup" />
+      <item itemvalue="Python.similarity" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.server" />
+        <item itemvalue="Python.similarity" />
         <item itemvalue="Python.ceva" />
         <item itemvalue="Python.keyGenereation" />
         <item itemvalue="Python.signup" />
@@ -229,22 +260,54 @@
       <workItem from="1591433930189" duration="5000" />
       <workItem from="1591439205673" duration="44138000" />
       <workItem from="1591730150475" duration="8444000" />
+      <workItem from="1591757953940" duration="168000" />
+      <workItem from="1591758264488" duration="13532000" />
+      <workItem from="1591879738800" duration="37147000" />
+      <workItem from="1592558346553" duration="36083000" />
+      <workItem from="1592684595068" duration="30429000" />
     </task>
+    <task id="LOCAL-00001" summary="De ce?">
+      <created>1592851362168</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1592851362168</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Ceva Ceva">
+      <created>1592853504167</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1592853504167</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Ceva Ceva">
+      <created>1592853603448</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1592853603448</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="De ce?" />
+    <MESSAGE value="Ceva Ceva" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ceva Ceva" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#SQL_Dialects" timestamp="1591471209631">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#SQL_Dialects/0.0.1536.824@0.0.1536.824" timestamp="1591471209631" />
-    <state x="2479" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591744681956">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="447" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591758309298">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="2479" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591744681956" />
-    <state x="447" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1591730516213" />
+    <state x="447" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1591758309298" />
     <state x="524" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588450157741">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -258,6 +321,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="611" y="303" key="#com.jetbrains.python.refactoring.move.PyMoveModuleMembersDialog/0.0.1536.824@0.0.1536.824" timestamp="1587820521446" />
+    <state x="393" y="7" key="CommitChangelistDialog2" timestamp="1592856635601">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="393" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1592856635601" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1589553224523">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -306,24 +373,37 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="209" y="134" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1591731334791" />
-    <state x="555" y="58" key="SettingsEditor" timestamp="1591737418709">
+    <state x="555" y="58" key="SettingsEditor" timestamp="1591758026105">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="2614" y="73" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591556124065" />
-    <state x="555" y="58" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1591737418709" />
+    <state x="555" y="58" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1591758026105" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1591443522245">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1591443522245" />
-    <state x="388" y="195" key="com.intellij.ide.util.TipDialog" timestamp="1591726293385">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1592853618948">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1592853618948" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1592684607558">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="388" y="195" key="com.intellij.ide.util.TipDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591726293385" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1591439213990" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1591733893666">
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1592558353689" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1592684607558" />
+    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1592827165103">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="2459" y="183" width="840" height="856" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591613755067" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1591733893666" />
+    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1592827165103" />
+    <state x="491" y="324" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1591758378346">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="491" y="324" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1536.824@0.0.1536.824" timestamp="1591758378346" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SiViR$similarity.coverage" NAME="similarity Coverage Results" MODIFIED="1592844959677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
+    <SUITE FILE_PATH="coverage/SiViR$server.coverage" NAME="server Coverage Results" MODIFIED="1592856508853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
