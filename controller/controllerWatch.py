@@ -31,7 +31,7 @@ def controllerWatch(environ, start_response):
         print(video)
         print(videos)
 
-        print(calculateSimilarity(video, videos))
+        videos = calculateSimilarity(video, videos)
 
 
 
@@ -44,6 +44,7 @@ def controllerWatch(environ, start_response):
             html_video = template.format(id=i['id'],
                                         srcthumbnail=i['thumbnail'],
                                         title=i['title'],
+                                        similarity = i['similarity'],
                                         description=i['description'])
             html_videos += html_video
 
