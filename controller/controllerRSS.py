@@ -26,4 +26,4 @@ def setRSS(yVideos):
     print(feed.rss())
 
 def getRSS():
-    yield rssFeed.encode('utf-8')
+    yield feed.encode('utf-8')

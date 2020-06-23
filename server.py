@@ -79,6 +79,6 @@ if __name__ == '__main__':
     dispatcher.register('GET', '/questionsPage', controllerQuestions)
     dispatcher.register('GET', '/', controllerFirstPage)
     dispatcher.register('GET', '/watch', controllerWatch)
-    dispatcher.register('GET', '/getRSS', controllerRSS)
+    dispatcher.register('GET', '/getRSS', getRSS)
     httpd = make_server('localhost', 8000, dispatcher)
     httpd.serve_forever()
