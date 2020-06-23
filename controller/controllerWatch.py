@@ -2,7 +2,7 @@ import sys
 import json
 sys.path.append('../')
 from model.util import checkJWT
-from model.youtubeAPI import videoPlayer, getcomments,getRecommendation
+from model.youtubeAPI import videoPlayer, getcomments,getRecommendationVideo
 from model.vimeoApi import *
 from model.similarity import calculateSimilarity
 from controller.controllerRSS import setRSS
@@ -43,6 +43,7 @@ def controllerWatch(environ, start_response):
             html = template.format(id='https://player.vimeo.com/video/'+params['v'][18:], title='TITLU', description='DESCRIERE', comments=commentsHTML,recommendations=html_videos)
             yield html.encode('utf-8')
 
+            
 
         else:
             start_response('200 OK', [('Content-text', 'text/plain')])
@@ -57,8 +58,8 @@ def controllerWatch(environ, start_response):
             for i in comments:
                 comment = template.format(author=i['author'], text=i['text'])
                 commentsHTML += comment
-
-            videos = getRecommendation(id)
+                
+            videos = getRecommendationVideo(id)
             setRSS(videos)
 
             videos = calculateSimilarity(video, videos)

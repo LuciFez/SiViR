@@ -7,6 +7,8 @@ from controller.controllerQuestions import *
 from controller.controllerSearchVideo import *
 from controller.controllerWatch import *
 from controller.controllerRSS import *
+from controller.controllerRecommendations import *
+
 
 
 def notfound(environ, start_response):
@@ -33,7 +35,7 @@ def handleCSS(environ, start_response):
     yield response
 
 
-def handleHTMLandJS(environ, start_response):
+def handleJS(environ, start_response):
     path = environ['PATH_INFO']
     start_response('200 OK', [('Content-text', 'text/html')])
     response = open('view' + path, 'rb').read()
@@ -54,7 +56,7 @@ class PathDispatcher:
         if path.endswith(".jpg") or path.endswith(".png"):
             return handleIMG(environ, start_response)
         elif path.endswith(".js"):
-            return handleHTMLandJS(environ, start_response)
+            return handleJS(environ, start_response)
         elif path.endswith(".css"):
             return handleCSS(environ, start_response)
         else:
@@ -71,7 +73,7 @@ if __name__ == '__main__':
     from wsgiref.simple_server import make_server
 
     dispatcher = PathDispatcher()
-    dispatcher.register('POST', '/signup', controllerSignUpPOST)
+    dispatcher.register('POST','/signup', controllerSignUpPOST)
     dispatcher.register('GET', '/signup', controllerSignUpGET)
     dispatcher.register('GET', '/login', loginGET)
     dispatcher.register('GET', '/search', controllerSearch)
@@ -80,5 +82,6 @@ if __name__ == '__main__':
     dispatcher.register('GET', '/', controllerFirstPage)
     dispatcher.register('GET', '/watch', controllerWatch)
     dispatcher.register('GET', '/getRSS', getRSS)
+    dispatcher.register('GET', '/recommendations', controllerRecommendations)
     httpd = make_server('localhost', 8000, dispatcher)
     httpd.serve_forever()
