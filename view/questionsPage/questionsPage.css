@@ -10,7 +10,7 @@ body {
 }
 
 body {
-  background: linear-gradient(to right, #ffd194, #d1913c);
+  background: linear-gradient(to right, #bdede6, #6a8a82);
 }
 
 .wrapper-center {
@@ -61,7 +61,7 @@ form {
 
 button {
   color: #ffffff;
-  background-color: rgb(247, 174, 40);
+  background-color: #6a8a82;
   font-size: 15px;
   border-width: 0px;
   border-radius: 20px;
@@ -77,5 +77,5 @@ button:active {
 }
 
 button:hover {
-  background-color: #e08b0b;
+  background-color: #106953;
 }
