@@ -204,3 +204,9 @@ function changeContent() {
     }
   }
 }
+
+const filters = document.getElementById("apply-filters");
+
+filters.addEventListener("submit", (e) => {
+
+});

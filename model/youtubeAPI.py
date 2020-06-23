@@ -14,7 +14,7 @@ def getRecommendation(regioncode='RO'):
     request = youtube.videos().list(
         part="snippet",
         chart="mostPopular",
-        maxResults=2,
+        maxResults=20,
         regionCode=regioncode
     )
 
