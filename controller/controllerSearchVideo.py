@@ -63,9 +63,10 @@ def controllerSearch(environ, start_response):
         message = {"message": "Bad username or password"}
         yield json.dumps(message).encode('utf-8')
     if 'q' in params:
-            videos = {'videos': searchVideo('inca nu e relevant', params['q'])}
+            #videosYT = {'videos': searchVideo('inca nu e relevant', params['q'])}
+            videosVIM = {'videos': vimeoSearch(params['q'])}
             start_response('200 OK', [('Content-text', 'text/plain')])
-            yield json.dumps(videos).encode('utf-8')
+            yield json.dumps(videosVIM).encode('utf-8')
     else:
         start_response("400 Bad Request", [('Content-text', 'text/plain')])
         message = {"message": "Empty query"}
