@@ -5,23 +5,20 @@
 }
 
 body {
-  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
-  background-repeat: no-repeat;
+background-color: #e4e7eb;
   height: auto;
   margin-top: 100px;
 }
 
 header {
   width: 98%;
-  background: #ebedee;
-  border-bottom: 1px;
-  border-color: white;
-  border-style: solid;
-  height: 60px;
+  background: #6a8a82;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 50px;
   display: flex;
   justify-content: space-between;
-  padding: 7px;
-  padding-right: 50px;
+  padding: 12px;
   position: fixed;
 
   top: 0;
@@ -32,10 +29,11 @@ header {
   max-width: 1600px;
   width: 50%;
   align-items: center;
-  padding: 30px;
+  padding: 10px;
   background: white;
   border-radius: 30px;
   position: relative;
+  padding-bottom: 10px;
 }
 
 #search-form input::placeholder {
@@ -98,8 +96,9 @@ input:-webkit-autofill:focus {
   background-position: center;
   display: inline-block;
   width: 150px;
-  height: 60px;
+  height: 50px;
   text-indent: -99999px;
+  padding: 0;
 }
 
 .show {
@@ -213,28 +212,32 @@ input:-webkit-autofill:focus {
 
 .other-videos {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
   height: auto;
   padding-left: 20px;
+  padding-right: 20px;
 }
 
 .rec-title h3 {
     color: #0c22e9;
-    padding: 15px 0;
+    padding-bottom: 20px;
     font-size: 18px;
     margin-left: 20px;
 }
 
 .other-videos .item {
   width: 32%;
-  margin-right: 15px;
-  margin-bottom: 15px;
+  padding-bottom: 20px;
 }
 
 .other-videos .item .content {
-  width: 100%;
+  width: 95%;
+  padding: 15px;
+  background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  border-radius: 10px;
+  display: inline-block;
 }
 
 .other-videos .item .content a img {
@@ -246,6 +249,8 @@ input:-webkit-autofill:focus {
   color: #4b4f57;
   font-size: 18px;
   margin-bottom: 20px;
+  margin-top: 10px;
+  border-bottom: 2px solid #9c9da6;
 }
 
 
@@ -263,5 +268,10 @@ input:-webkit-autofill:focus {
 }
 
 .username {
-    margin-top: 15px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.username h2 {
+  color: #faf9f5;
 }
