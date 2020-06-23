@@ -6,7 +6,8 @@ def vimeoSearch(query):
         key='a591a007d8a09bc7fd57c50d325180224bdffa25',
         secret='4IWycSdPpr9m73k/5TTQF+WBUV631kUtK4EQETBVhzmweZXTiOZp7jYYSP3cEXrzSLfS2IrQh1lnVPevXvZPbyRJV3UKWYwfhzHr68nUHSHg+Srm3BvqOiPvc8gAjWH3'
     )
-    res = client.get('/videos?query='+query)
+    'videos?direction=asc&filter=trending&page=1&per_page=10&query=cat&sort=likes'
+    res = client.get('/videos?direction=asc&filter=trending&page=1&per_page=10&query='+query+'&sort=likes')
     jsonData = res.json()
 
     results = [{'id': i['link'],
