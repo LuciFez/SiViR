@@ -94,8 +94,7 @@ input:-webkit-autofill:focus {
 }
 
 #dropdown {
-  height: 80%;
-  overflow-y: scroll;
+  height: 70%;
 }
 
 #settings-form {
@@ -239,4 +238,11 @@ input:-webkit-autofill:focus {
 
 .username h2 {
   color: #faf9f5;
+}
+
+.text-truncate {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }

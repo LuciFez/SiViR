@@ -40,7 +40,7 @@ header {
   text-align: left;
 }
 
-#search-form input {
+#search-form #q {
   font-size: 18px;
   width: 100%;
   border: none;
@@ -87,6 +87,7 @@ input:-webkit-autofill:focus {
   border-radius: 0px 0px 10px 10px;
   padding: 15px;
   border-color: white;
+
 }
 
 #platform {
@@ -95,6 +96,61 @@ input:-webkit-autofill:focus {
   border-radius: 5px;
   margin-bottom: 15px;
 }
+
+#dropdown {
+  height: 70%;
+}
+
+
+#settings-form {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 60px;
+}
+
+.question {
+  color: #737377;
+  margin-bottom: 10px;
+}
+
+.question p {
+    margin-bottom: 15px;
+}
+
+.criteria-platform {
+  height: auto;
+}
+
+.settings-form .question .radio {
+    width: 20px;
+}
+
+.settings-form .radio-label {
+    margin-top: 4px;
+    margin-left: 5px;
+}
+
+#filters {
+  width: 50%;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.wrapper-buttons button {
+    color: #ffffff;
+    background-color: #6a8a82;
+    font-size: 15px;
+    border-width: 0px;
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+    margin: 5px;
+    outline: none;
+  }
+
+
+
 
 #logo {
   background-image: url("../img/logo.png");

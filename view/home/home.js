@@ -133,7 +133,7 @@ setTimeout(function () {
               "    <h2>" +
               videos[i]["title"] +
               "</h2>" +
-              "    <p>" +
+              "    <p class='text-truncate'>" +
               videos[i]["description"] +
               "</p>" +
               "</div>" +
