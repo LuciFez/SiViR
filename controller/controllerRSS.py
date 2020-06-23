@@ -23,7 +23,6 @@ def setRSS(yVideos):
         language = "en-US",
         items = itemList
     )
-    print(feed.rss())
 
 def getRSS():
     yield feed.encode('utf-8')

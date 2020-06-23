@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c680904a-f6fe-4435-8b91-5b3497441106" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/poriect2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/youtubeAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/youtubeAPI.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/home/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/home/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/watch/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/watch/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/watch/watch.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/watch/watch.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/watch/watch.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/watch/watch.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1aBdxwoTgPLmA7w2mbv1tKuK755" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql.8" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lcubersc\Desktop\Proiect TW\SiViR\controller" />
+      <recent name="C:\Users\lcubersc\Desktop\Proiect TW\SiViR\model" />
+      <recent name="C:\Users\Cosmin\Desktop\SiViR\view\img" />
+      <recent name="C:\Users\Cosmin\Desktop\SiViR\view\firstPage" />
+      <recent name="C:\Users\Cosmin\Desktop\Facultate\TW\poriect2" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.server">
+    <configuration name="ceva" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="poriect2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/PythonProjects/somethong" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/PythonProjects/somethong/ceva.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="keyGenereation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="poriect2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Models" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Models/keyGenereation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="server" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SiViR" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Python376\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/server.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="signup" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="poriect2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Cosmin\Desktop\Facultate\TW\poriect2\Models\signup.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="similarity" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SiViR" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/model" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/model/similarity.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.ceva" />
+      <item itemvalue="Python.keyGenereation" />
+      <item itemvalue="Python.server" />
+      <item itemvalue="Python.signup" />
+      <item itemvalue="Python.similarity" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.server" />
+        <item itemvalue="Python.similarity" />
+        <item itemvalue="Python.ceva" />
+        <item itemvalue="Python.keyGenereation" />
+        <item itemvalue="Python.signup" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+    <option name="showServicesTree" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c680904a-f6fe-4435-8b91-5b3497441106" name="Default Changelist" comment="" />
+      <created>1586213170514</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586213170514</updated>
+      <workItem from="1586213172423" duration="7794000" />
+      <workItem from="1586353024740" duration="581000" />
+      <workItem from="1586368683905" duration="875000" />
+      <workItem from="1586518751392" duration="632000" />
+      <workItem from="1586603672745" duration="955000" />
+      <workItem from="1587209057729" duration="10297000" />
+      <workItem from="1587250276743" duration="600000" />
+      <workItem from="1587327268269" duration="600000" />
+      <workItem from="1587471428476" duration="673000" />
+      <workItem from="1587474251530" duration="754000" />
+      <workItem from="1587554075412" duration="2632000" />
+      <workItem from="1587563330162" duration="473000" />
+      <workItem from="1587563889017" duration="5311000" />
+      <workItem from="1587817760485" duration="24195000" />
+      <workItem from="1587855443289" duration="46000" />
+      <workItem from="1587994628268" duration="2211000" />
+      <workItem from="1588047660199" duration="12644000" />
+      <workItem from="1588184246602" duration="18726000" />
+      <workItem from="1588346281169" duration="1112000" />
+      <workItem from="1588449177658" duration="3818000" />
+      <workItem from="1588520749017" duration="4429000" />
+      <workItem from="1588596923670" duration="2878000" />
+      <workItem from="1588663572013" duration="638000" />
+      <workItem from="1588770863702" duration="8341000" />
+      <workItem from="1588853671697" duration="1769000" />
+      <workItem from="1588952318479" duration="669000" />
+      <workItem from="1589046451138" duration="3333000" />
+      <workItem from="1589221580772" duration="594000" />
+      <workItem from="1589292125638" duration="418000" />
+      <workItem from="1589295577549" duration="1683000" />
+      <workItem from="1589553160988" duration="58000" />
+      <workItem from="1591274601927" duration="1107000" />
+      <workItem from="1591433930189" duration="5000" />
+      <workItem from="1591439205673" duration="44138000" />
+      <workItem from="1591730150475" duration="8444000" />
+      <workItem from="1591757953940" duration="168000" />
+      <workItem from="1591758264488" duration="13532000" />
+      <workItem from="1591879738800" duration="37147000" />
+      <workItem from="1592558346553" duration="36083000" />
+      <workItem from="1592684595068" duration="30429000" />
+    </task>
+    <task id="LOCAL-00001" summary="De ce?">
+      <created>1592851362168</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1592851362168</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Ceva Ceva">
+      <created>1592853504167</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1592853504167</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Ceva Ceva">
+      <created>1592853603448</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1592853603448</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="De ce?" />
+    <MESSAGE value="Ceva Ceva" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ceva Ceva" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="71" key="#SQL_Dialects" timestamp="1591471209631">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="71" key="#SQL_Dialects/0.0.1536.824@0.0.1536.824" timestamp="1591471209631" />
+    <state x="2479" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592857428291">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2479" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592857428291" />
+    <state x="447" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1591758309298" />
+    <state x="524" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588450157741">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="524" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1588450157741" />
+    <state x="552" y="215" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591732632626">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="2610" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591729031137" />
+    <state x="552" y="215" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1591732632626" />
+    <state x="611" y="303" key="#com.jetbrains.python.refactoring.move.PyMoveModuleMembersDialog" timestamp="1587820521446">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="611" y="303" key="#com.jetbrains.python.refactoring.move.PyMoveModuleMembersDialog/0.0.1536.824@0.0.1536.824" timestamp="1587820521446" />
+    <state x="393" y="7" key="CommitChangelistDialog2" timestamp="1592856635601">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="393" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1592856635601" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1589553224523">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1589553224523" />
+    <state width="1899" height="228" key="GridCell.Tab.0.bottom" timestamp="1592940279602">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1259" height="423" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1591643413252" />
+    <state width="1899" height="228" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592940279602" />
+    <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591738927298" />
+    <state width="1899" height="228" key="GridCell.Tab.0.center" timestamp="1592940279602">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1259" height="423" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1591643413252" />
+    <state width="1899" height="228" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592940279601" />
+    <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1591738927298" />
+    <state width="1899" height="228" key="GridCell.Tab.0.left" timestamp="1592940279601">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1259" height="423" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1591643413252" />
+    <state width="1899" height="228" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592940279601" />
+    <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1591738927298" />
+    <state width="1899" height="228" key="GridCell.Tab.0.right" timestamp="1592940279602">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1259" height="423" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1591643413252" />
+    <state width="1899" height="228" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592940279602" />
+    <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1591738927298" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1591535713856">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591535713856" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1591535713855">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1591535713855" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1591535713855">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1591535713855" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1591535713855">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1591535713855" />
+    <state x="209" y="134" key="RollbackChangesDialog" timestamp="1591731334791">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="134" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1591731334791" />
+    <state x="555" y="58" key="SettingsEditor" timestamp="1591758026105">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="2614" y="73" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591556124065" />
+    <state x="555" y="58" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1591758026105" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1591443522245">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1591443522245" />
+    <state x="2371" y="183" key="Vcs.Push.Dialog.v2" timestamp="1592909355919">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2371" y="183" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592909355919" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1592853618948" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1592684607558">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="388" y="195" key="com.intellij.ide.util.TipDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591726293385" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1592558353689" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1592684607558" />
+    <state x="2459" y="183" width="840" height="856" key="search.everywhere.popup" timestamp="1592869127584">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2459" y="183" width="840" height="856" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592869127584" />
+    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1592827165103" />
+    <state x="491" y="324" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1591758378346">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="491" y="324" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1536.824@0.0.1536.824" timestamp="1591758378346" />
+  </component>
+</project>

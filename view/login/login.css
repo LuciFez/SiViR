@@ -10,11 +10,7 @@ body {
 }
 
 body {
-  background: linear-gradient(
-    to right,
-    #ffd194,
-    #d1913c
-  ); 
+  background: linear-gradient(to right, #bdede6, #6a8a82);
 }
 
 .wrapper-center {
@@ -30,7 +26,7 @@ body {
   display: flex;
   background-color: white;
   border-radius: 10px;
-  width:400px;
+  width: 400px;
   height: 300px;
 }
 
@@ -53,7 +49,6 @@ button:focus {
   outline: none;
 }
 
-
 input {
   color: #777272;
   background-color: #f2f4f5;
@@ -65,27 +60,28 @@ input {
 }
 
 .wrapper-buttons {
-    display: flex;
-    margin: 10px;
-    justify-content: center;
+  display: flex;
+  margin: 10px;
+  justify-content: center;
 }
 
 button {
-    color: #ffffff;
-    background-color: rgb(247, 174, 40);
-    font-size:15px;
-    border-width: 0px;
-    border-radius: 20px;
-    width: 100px;
-    height: 30px;
-    margin: 5px;
+  color: #ffffff;
+  background-color: #6a8a82;
+  font-size: 15px;
+  border-width: 0px;
+  border-radius: 20px;
+  width: 100px;
+  height: 30px;
+  margin: 5px;
+  cursor: pointer;
 }
 
 button:active {
-	position:relative;
-	top:1px;
+  position: relative;
+  top: 1px;
 }
 
 button:hover {
-	background-color: #e08b0b;
+  background-color: #106953;
 }
