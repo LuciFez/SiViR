@@ -58,7 +58,7 @@ myForum.addEventListener("submit", (e) => {
 window.onclick = function(event) {
   if (event.target.matches('#dropdown-button')) {
       document.getElementById("dropdown").classList.toggle("show");
-  }else if (event.target.matches('#username')){
+  }else if (event.target.matches('#username') || event.target.matches('#username h2')){
       document.getElementById("dropdown-username").classList.toggle("show");
   }
   else if(event.target.matches('.dropdown-content') || event.target.matches('.dropdown-content-element')) {
@@ -82,7 +82,7 @@ function resizeGridItem(item){
    let rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
    let rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap'));
    let rowSpan = Math.ceil((item.querySelector('.content').getBoundingClientRect().height + rowGap) / (rowHeight + rowGap));
-   item.style.gridRowEnd = "span "+rowSpan ;
+   item.style.gridRowEnd = "span"+rowSpan ;
 }
 
 function resizeAllGridItems(){
@@ -132,11 +132,6 @@ setTimeout(function(){
            console.error(error);});
         resizeAllGridItems();
 
-        const selectElement = document.querySelector('.ice-cream');
-
-
-
-
 }, 150);
 
 
@@ -146,7 +141,7 @@ const platform = document.getElementById("platform");
 platform.addEventListener('change', (event) => {
     var criteria = document.getElementById("criteria-platform");
 
-    if (event.target.value == "youtube") {
+    if (event.target.value === "youtube") {
         criteria.innerHTML =
             '<select name="order" class="dropdown-content-element">'+
                         '<option value="relevance">Relevance</option>'+
@@ -155,7 +150,7 @@ platform.addEventListener('change', (event) => {
                         '<option value="title">Title</option>'+
                         '<option value="videoCount">Video Count</option>'+
             '</select>';
-    } else if (event.target.value == "vimeo") {
+    } else if (event.target.value === "vimeo") {
         criteria.innerHTML = "Vimeo";
     } else {
         criteria.innerHTML = "You can only search tags on Instagram";

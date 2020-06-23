@@ -187,12 +187,12 @@ input:-webkit-autofill:focus {
     padding: 5px;
 }
 
-.username {
-    margin-top: 10px;
-    margin-right: 10px;
+#username {
+   padding: 10px;
+
 }
 
 
-.username h2 {
+#username h2 {
     color: #45464b;
-  }
+}
