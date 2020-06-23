@@ -7,6 +7,8 @@ from controller.controllerQuestions import *
 from controller.controllerSearchVideo import *
 from controller.controllerWatch import *
 from controller.controllerRSS import *
+from controller.controllerRecommendations import *
+
 
 
 def notfound(environ, start_response):
@@ -74,11 +76,12 @@ if __name__ == '__main__':
     dispatcher.register('POST', '/signup', controllerSignUpPOST)
     dispatcher.register('GET', '/signup', controllerSignUpGET)
     dispatcher.register('GET', '/login', loginGET)
-    dispatcher.register('GET', '/search', controllerSearch)
+ #   dispatcher.register('GET', '/search', controllerSearch)
     dispatcher.register('GET', '/getkey', controllerGetPubKey)
     dispatcher.register('GET', '/questionsPage', controllerQuestions)
     dispatcher.register('GET', '/', controllerFirstPage)
     dispatcher.register('GET', '/watch', controllerWatch)
     dispatcher.register('GET', '/getRSS', getRSS)
+ #   dispatcher.register('GET', '/recommendations', controllerRecommendations)
     httpd = make_server('localhost', 8000, dispatcher)
     httpd.serve_forever()

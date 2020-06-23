@@ -63,7 +63,7 @@ def controllerSearch(environ, start_response):
         message = {"message": "Bad username or password"}
         yield json.dumps(message).encode('utf-8')
     if 'q' in params:
-            videos = {'videos': searchVideo('inca nu e relevant', params['q'])}
+            videos = {'videos': searchVideo(params['q'])}
             start_response('200 OK', [('Content-text', 'text/plain')])
             yield json.dumps(videos).encode('utf-8')
     else:

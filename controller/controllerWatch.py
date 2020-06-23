@@ -2,7 +2,7 @@ import sys
 import json
 sys.path.append('../')
 from model.util import checkJWT
-from model.youtubeAPI import videoPlayer, getcomments,getRecommendation
+from model.youtubeAPI import videoPlayer, getcomments,getRecommendationVideo
 from model.similarity import calculateSimilarity
 from controller.controllerRSS import setRSS
 
@@ -28,7 +28,7 @@ def controllerWatch(environ, start_response):
             comment = template.format(author=i['author'], text=i['text'])
             commentsHTML += comment
 
-        videos = getRecommendation(id)
+        videos = getRecommendationVideo(id)
 
         setRSS(videos)
 
