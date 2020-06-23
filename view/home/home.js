@@ -3,23 +3,22 @@ const myForum = document.getElementById("search-form");
 
 myForum.addEventListener("submit", (e) => {
     e.preventDefault();
-    var q = document.getElementById("q").value;
-    var inputs = document.getElementById('criteria-platform').getElementsByTagName('input');
-    var parse_path = '';
-    var i;
-    for (i = 0; i < inputs.length; i++) {
-         parse_path += '&' + inputs[i].name + '=' + inputs[i].value;
-    }
-    inputs = document.getElementById('criteria-platform').getElementsByTagName('select');
-    console.log(inputs);
-    parse_path = '';
-    i;
-    for (i = 0; i < inputs.length; i++) {
-         parse_path += '&' + inputs[i].name + '=' + inputs[i].value;
-    }
-    console.log(parse_path);
+    let q = document.getElementById("q").value;
+    let p = document.getElementById("platform").value;
+    let params ='?q='+q+'&p='+p;
 
-    fetch('/search?q='+q,
+    let inputs = document.getElementById('criteria-platform').getElementsByTagName('input');
+    let i;
+    for (i = 0; i < inputs.length; i++) {
+         params += '&' + inputs[i].name + '=' + inputs[i].value;
+    }
+
+    inputs = document.getElementById('criteria-platform').getElementsByTagName('select');
+    for (i = 0; i < inputs.length; i++) {
+         params += '&' + inputs[i].name + '=' + inputs[i].value;
+    }
+
+    fetch('/search' +params,
         {credentials: "include"}
     ).then( response => {
          if( response.status === 200) {
@@ -60,7 +59,6 @@ window.onclick = function(event) {
   if (event.target.matches('#dropdown-button')) {
       document.getElementById("dropdown").classList.toggle("show");
   }else if (event.target.matches('#username')){
-      console.log("muie la fraieri")
       document.getElementById("dropdown-username").classList.toggle("show");
   }
   else if(event.target.matches('.dropdown-content') || event.target.matches('.dropdown-content-element')) {
@@ -80,16 +78,17 @@ window.onclick = function(event) {
 
 
 function resizeGridItem(item){
-   grid = document.getElementsByClassName("grid")[0];
-   rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
-   rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap'));
-   rowSpan = Math.ceil((item.querySelector('.content').getBoundingClientRect().height+rowGap)/(rowHeight+rowGap));
+   let grid = document.getElementsByClassName("grid")[0];
+   let rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
+   let rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap'));
+   let rowSpan = Math.ceil((item.querySelector('.content').getBoundingClientRect().height + rowGap) / (rowHeight + rowGap));
    item.style.gridRowEnd = "span "+rowSpan ;
 }
 
 function resizeAllGridItems(){
-   allItems = document.getElementsByClassName("item");
-   for(x=0;x<allItems.length;x++){
+   let allItems = document.getElementsByClassName("item");
+   let x;
+   for( x=0;x<allItems.length;x++){
       resizeGridItem(allItems[x]);
    }
 }

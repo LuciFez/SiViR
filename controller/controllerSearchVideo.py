@@ -60,18 +60,18 @@ def controllerSearch(environ, start_response):
     user = checkJWT(environ)
     if not user:
         start_response('401 Unauthorized', [('Content-text', 'text/plain')])
-        message = {"message": "Bad username or password"}
+        message = {"message": "Not logged in"}
         yield json.dumps(message).encode('utf-8')
     if 'q' in params:
             videosYT = {'videos': searchVideo(params['q'])}
             videosVIM = {'videos': vimeoSearch(params['q'])}
 
-            items= []
+            items = []
             for i in videosYT['videos']:
                 items.append(i)
             for i in videosVIM['videos']:
                 items.append(i)
-            js = {'videos' : items}
+            js = {'videos': items}
 
             start_response('200 OK', [('Content-text', 'text/plain')])
             yield json.dumps(js).encode('utf-8')
