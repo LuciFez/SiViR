@@ -89,6 +89,13 @@ input:-webkit-autofill:focus {
   border-color: white;
 }
 
+#platform {
+  width: 50%;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
 #logo {
   background-image: url("../img/logo.png");
   background-size: 100px;

@@ -13,13 +13,61 @@
             <input id="q" type="text" name="q" placeholder="Search" spellcheck="false"/>
              <button id="search-button">Search  </button>
             <div id="dropdown-button">
-                <div id="dropdown" class="dropdown-content">
-                    <select id="platform" name="platform" class="dropdown-content-element">
+                <div id="dropdown" class="dropdown-content question">
+                    <p>Select platform</p>
+                    <select id="platform" name="platform" class="dropdown-content-element" onchange="changeContent()">
                         <option value="youtube">YouTube</option>
                         <option value="instagram">Instagram</option>
                         <option value="youtube">Vimeo</option>
                     </select>
-                    <div id="criteria-platform" class="dropdown-content-element">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, repellat.</div>
+                    <div id="vimeo-criteria" >
+                        <form id="settings-form">
+                            <div id="question1" class="question">
+                                <p>Direction</p>
+                                <div class="question-options">
+                                  <input class="radio" type="radio" id="asc" value="Asc" name="question1" />
+                                  <label class="radio-label" for="asc">Asc</label>
+                                  <input class="radio" type="radio" id="desc" value="Desc" name="question1" />
+                                  <label class="radio-label" for="desc">Desc</label>
+                                </div>
+                              </div>
+                              <div id="question2" class="question">
+                                <p>Filter</p>
+                                <select  name="filters" id="filters">
+                                    <option value="categories">categories</option>
+                                    <option value="duration">duration</option>
+                                    <option value="trending">trending</option>
+                                    <option value="minimm_likes">minimum_likes</option>
+                                    <option value="upload_date">upload_date</option>
+                                </select>
+                              </div>
+                              <div id="question3" class="question">
+                                <p>Page number</p>
+                                <input type="number">
+                              </div>
+                              <div id="question4" class="question">
+                                <p>Results per page</p>
+                                <input type="number">
+                              </div>
+                              <div id="question5" class="question">
+                                <p>Sort options</p>
+                                <select  name="filters" id="filters">
+                                    <option value="alphabetical">alphabetical</option>
+                                    <option value="comments">comments</option>
+                                    <option value="likes">likes</option>
+                                    <option value="plays">plays</option>
+                                    <option value="relevant">relevant</option>
+                                </select>
+                              </div>
+                              <div class="wrapper-buttons">
+                                <button type="submit" >Apply</button>
+                              </div>
+                        </form>
+                    </div>
+
+                    <div class="youtube-criteria">
+
+                    </div>
                 </div>
             </div>
 
