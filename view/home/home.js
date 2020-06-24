@@ -3,25 +3,9 @@ const myForum = document.getElementById("search-form");
 myForum.addEventListener("submit", (e) => {
   e.preventDefault();
   let q = document.getElementById("q").value;
-  let p = document.getElementById("platform").value;
-  let params = "?q=" + q + "&p=" + p;
 
-  let inputs = document
-    .getElementById("criteria-platform")
-    .getElementsByTagName("input");
-  let i;
-  for (i = 0; i < inputs.length; i++) {
-    params += "&" + inputs[i].name + "=" + inputs[i].value;
-  }
 
-  inputs = document
-    .getElementById("criteria-platform")
-    .getElementsByTagName("select");
-  for (i = 0; i < inputs.length; i++) {
-    params += "&" + inputs[i].name + "=" + inputs[i].value;
-  }
-
-  fetch("/search" + params, { credentials: "include" })
+  fetch("/search?q=" + q, { credentials: "include" })
     .then((response) => {
       if (response.status === 200) {
         response.json().then(function (response) {

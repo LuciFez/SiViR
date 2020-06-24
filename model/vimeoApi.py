@@ -39,3 +39,13 @@ def getRecommendationVimeo(id):
     res = client.get('/videos/' + id[18:]+'/videos?filter=related&page=1&per_page=10')
     jsonData = res.json()
     return jsonData
+
+def getVideo(id):
+    client = vimeo.VimeoClient(
+        token='1a028b267f6e92a4f90389b031d33b60',
+        key='a591a007d8a09bc7fd57c50d325180224bdffa25',
+        secret='4IWycSdPpr9m73k/5TTQF+WBUV631kUtK4EQETBVhzmweZXTiOZp7jYYSP3cEXrzSLfS2IrQh1lnVPevXvZPbyRJV3UKWYwfhzHr68nUHSHg+Srm3BvqOiPvc8gAjWH3'
+    )
+    res = client.get('/videos/' + id[18:] )
+    jsonData = res.json()
+    return jsonData

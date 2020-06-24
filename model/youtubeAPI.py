@@ -1,7 +1,7 @@
 import googleapiclient.discovery
 
 def buildAPI():
-    api_key = 'AIzaSyDxGqE0hqfePEPK7uL_jbaMMAcVPJKn3sA'
+    api_key = 'AIzaSyDneNr5blVqIK3Khyfht4r3kR91PR_qWgM'
     api_service_name = "youtube"
     api_version = "v3"
 
@@ -20,7 +20,6 @@ def getRecommendation(regioncode='RO'):
 
     response = request.execute()
 
-    print(response)
 
     results = [{'platform' : 'youtube',
                 'id': i['id'],

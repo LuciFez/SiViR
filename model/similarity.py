@@ -8,8 +8,9 @@ def calculateSimilarity(info_video, suggestions):
     info_videos = [info_video]
 
     for suggestion in suggestions:
-        info_suggestion = suggestion['title'] + ' ' + suggestion['description'].replace('\n', ' ')
-        info_videos.append(info_suggestion)
+        if suggestion['description']:
+            info_suggestion = suggestion['title'] + ' ' + suggestion['description'].replace('\n', ' ')
+            info_videos.append(info_suggestion)
     df = pd.DataFrame(info_videos)
     vectorizer = CountVectorizer(analyzer='word')
 
@@ -17,10 +18,13 @@ def calculateSimilarity(info_video, suggestions):
     cosine_sim = cosine_similarity(X[1:], X[0])
     similarity = list(enumerate(cosine_sim))
 
+    index = 0
     for i in range(len(suggestions)):
-        suggestions[i]['similarity'] = similarity[i][1][0]
+        if not suggestions[i]['description']:
+            index = index + 1
+        else:
+            suggestions[i]['similarity'] = similarity[i-index][1][0]
     similarity.sort(key=lambda x: x[1], reverse=True)
     return suggestions
-
 
 

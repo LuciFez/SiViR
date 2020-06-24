@@ -6,7 +6,6 @@ from controller.controllerFirstPage import *
 from controller.controllerQuestions import *
 from controller.controllerSearchVideo import *
 from controller.controllerWatch import *
-from controller.controllerRSS import *
 from controller.controllerRecommendations import *
 
 
@@ -81,7 +80,6 @@ if __name__ == '__main__':
     dispatcher.register('GET', '/questionsPage', controllerQuestions)
     dispatcher.register('GET', '/', controllerFirstPage)
     dispatcher.register('GET', '/watch', controllerWatch)
-    dispatcher.register('GET', '/getRSS', getRSS)
     dispatcher.register('GET', '/recommendations', controllerRecommendations)
     httpd = make_server('localhost', 8000, dispatcher)
     httpd.serve_forever()
